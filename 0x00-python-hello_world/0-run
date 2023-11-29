@@ -12,6 +12,8 @@ if [ ! -f "$PYFILE" ]; then
     exit 1
 fi
 
+# Add a new line
+echo
+
 # Run the Python script
 python3 "$PYFILE"
-
