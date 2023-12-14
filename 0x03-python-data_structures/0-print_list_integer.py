@@ -1,7 +1,7 @@
-def print_list_integer(my_list=[]):
-    for number in my_list:
-        print("{:d}".format(number))
+#!/usr/bin/python3
 
-# Test the function with the provided example
-my_list = [1, 2, 3, 4, 5]
-print_list_integer(my_list)
+
+# print_list_integer - prints the ints in a list.
+def print_list_integer(my_list=[]):
+    for i in my_list:
+        print("{:d}".format(i))
