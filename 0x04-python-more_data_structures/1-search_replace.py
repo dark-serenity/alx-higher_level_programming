@@ -1,8 +1,12 @@
 #!/usr/bin/python3
 
+
+# replaces all occurences of an element by another.
 def search_replace(my_list, search, replace):
-    # Check if the search value is present in the list
-    if search in my_list:
-        # Replace the search value with the replace value
-        index = my_list.index(search)
-        my_list[index] = replace
+    new_list = []
+    for i in my_list:
+        if i == search:
+            new_list.append(replace)
+        else:
+            new_list.append(i)
+    return new_list
